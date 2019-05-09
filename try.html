@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>try</title>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+    </style>
+</head>
+<body>
+<h2><center>List of Users</center></h2>
+<table>
+    <tr >
+    <th><h3>Select a user to view details</h3></th>
+
+  </tr>
+    {% for i in range(0,count)%}
+
+   <tr>
+       <td><a href="us-{{user.M_course[i]}}">{{user.M_course[i]}}</a></td>
+  </tr>
+  {% endfor %}
+    </table>
+
+</body>
+</html>
